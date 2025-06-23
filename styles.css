@@ -47,7 +47,8 @@ body {
     background-image: url('Pumps.png');
     background-size: cover;
     background-position: center;
-    height: 100%; /* Adjust height as needed */
+    height: 60vh; /* Adjust height as needed */
+    width:100%;
 }
 .icon{
     height: 15px;
