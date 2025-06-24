@@ -36,12 +36,7 @@ const products = [
     price: "$39.99",
     image: "https://e7.pngegg.com/pngimages/137/277/png-clipart-submersible-pump-product-water-solar-powered-pump-water-compressor-hydraulic-pump.png"
   },
-    {
-    name: "HD Webcam",
-    description: "1080p HD webcam for video calls and streaming.",
-    price: "$39.99",
-    image: "https://th.bing.com/th/id/R.45d560fda6f28eb1d09b4e25212169fe?rik=R2tYDaY%2bspe6tg&riu=http%3a%2f%2fprintablegraphics.in%2fwp-content%2fuploads%2f2017%2f11%2fSubmersible-pump-Havells.png&ehk=XXLCv1jsiI%2fA9Wbhbtx%2bAq4NWI5t8REvKWsS%2fpsz0dM%3d&risl=&pid=ImgRaw&r=0"
-  },
+    
       {
     name: "HD Webcam",
     description: "1080p HD webcam for video calls and streaming.",
@@ -53,19 +48,7 @@ const products = [
     description: "1080p HD webcam for video calls and streaming.",
     price: "$39.99",
     image: "https://e7.pngegg.com/pngimages/343/164/png-clipart-submersible-pump-solar-powered-pump-water-pumping-irrigation-water-submersible-pump-borstelloze-elektromotor.png"
-  } ,
-     {
-    name: "HD Webcam",
-    description: "1080p HD webcam for video calls and streaming.",
-    price: "$39.99",
-    image: "https://th.bing.com/th/id/OIP.Fe1dZ0ziB9GjR6IcFnPs4gHaEa?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3"
-  },
-     {
-    name: "HD Webcam",
-    description: "1080p HD webcam for video calls and streaming.",
-    price: "$39.99",
-    image: "https://th.bing.com/th/id/OIF.D69rspeVNX7P2RVtolRJhQ?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3"
-  }  
+  }
 ];
 
 // Render the products
