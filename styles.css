@@ -21,6 +21,11 @@ header {
   text-align: center;
 }
 
+/* Lime Highlight */
+.lime {
+  color: lime;
+}
+
 /* Navigation */
 nav {
   background-color: #000;
