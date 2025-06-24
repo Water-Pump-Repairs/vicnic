@@ -24,6 +24,48 @@ const products = [
     price: "$39.99",
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
   }
+  {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  },
+  {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  },
+    {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  },
+      {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  },
+      {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  } ,
+     {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  },
+     {
+    name: "HD Webcam",
+    description: "1080p HD webcam for video calls and streaming.",
+    price: "$39.99",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+  }  
 ];
 
 // Render the products
