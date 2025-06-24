@@ -25,10 +25,14 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;                /* Use flexbox */
+  flex-direction: row;          /* Row direction */
+  justify-content: center;      /* Center the nav items horizontally */
+  align-items: center;          /* Center vertically (optional for aesthetics) */
 }
 
 nav ul li {
-  display: inline-block; /* Improved for more styling options */
+  display: inline-block;
   margin: 0 15px;
   position: relative;
 }
@@ -40,9 +44,11 @@ nav a {
   padding: 8px 16px;
   transition: background 0.2s, color 0.2s;
   border-radius: 4px;
+  background: transparent;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   background: lime;
   color: #000;
 }
