@@ -96,7 +96,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 32px;
+  margin: 0 20px;
   position: relative;
 }
 
@@ -104,7 +104,7 @@ nav a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: 6px 10px;
   border-radius: 4px;
   background: transparent;
   transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
