@@ -275,15 +275,30 @@ main textarea:focus {
   outline: 2px solid var(--primary-color);
 }
 
-/* ==============================
-   Footer
-   ============================== */
 footer {
   background-color: var(--footer-bg);
   color: var(--primary-color);
-  text-align: center;
   padding: 10px 0;
   width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* space between items */
+  text-align: center; /* keeps it tidy on wrap */
+}
+
+.footer-content span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.lime {
+  color: lime;
 }
 
 /* ==============================
