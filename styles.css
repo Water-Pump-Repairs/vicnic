@@ -44,7 +44,12 @@ body {
   flex-direction: column;
   line-height: 1.6;
 }
-
+/* Highlighted contact link style */
+.contact-highlight {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
 /* Remove default outline only if not focused, otherwise custom focus styles handled below */
 :focus {
   outline: none;
