@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vicnic Water Pump Repair</title>
+  <title>Contact - Vicnic Water Pump Repair</title>
+  <meta name="description" content="Contact Vicnic Water Pump Repair for fast and affordable water pump repair and maintenance. Phone, email, WhatsApp, and location details.">
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts Oswald for tall thin font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
 </head>
 <body>
- <header>
-  <h1 class="company-title">
-    <a href="index.html" class="lime" style="text-decoration:none;">Vicnic Water Pump Repair</a>
-  </h1>
-  <p>Reliable · <a href="index.html" class="lime">Fast</a> · Affordable</p>
-</header>
-  <nav>
+  <header>
+    <h1 class="company-title">
+      <a href="index.html" class="lime" style="text-decoration:none;">Vicnic Water Pump Repair</a>
+    </h1>
+    <p>Reliable · <a href="index.html" class="lime">Fast</a> · Affordable</p>
+  </header>
+  <nav aria-label="Main Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -23,17 +26,30 @@
     </ul>
   </nav>
   <main>
-    <img src="hero-image.jpg" alt="Vicnic Water Pump Repair in action" class="hero-image">
-    <h2>Welcome to Vicnic Water Pump Repair</h2>
-    <p>
-      We specialize in the maintenance and repair of water pumps for homes, farms, and businesses. Our experienced team is dedicated to providing <span class="lime">fast</span>, reliable, and affordable solutions to keep your water flowing smoothly.
-    </p>
-    <p>
-      <a href="services.html" class="button">See Our Services</a>
-    </p>
+    <h2 class="contact-us-title">Contact us</h2>
+    <p>For service requests, quotes, or inquiries, please use any of the methods below:</p>
+    <ul>
+      <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></li>
+      <li><strong>Email:</strong> <a href="mailto:info@vicnicwaterpumps.com">info@vicnicwaterpumps.com</a></li>
+      <li><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank">Chat with us</a></li>
+      <li><strong>Address:</strong> 123 Main Street, Your City, Country</li>
+    </ul>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button class="primary-button" type="submit">Send Message</button>
+    </form>
   </main>
   <footer>
-    &copy; 2025 <span class="lime">Vicnic</span> Water Pump Repair. All rights reserved.
+    <p>
+      &copy; 2025 <span class="lime">Vicnic</span> Water Pump Repair. All rights reserved.<br>
+      <strong>Phone:</strong> <a href="tel:+1234567890" style="color:lime;">+1 234 567 890</a> |
+      <strong>Address:</strong> 123 Main Street, Your City, Country
+    </p>
   </footer>
 </body>
 </html>
