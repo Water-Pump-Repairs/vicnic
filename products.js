@@ -64,7 +64,7 @@ const products = [
     name: "HD Webcam",
     description: "1080p HD webcam for video calls and streaming.",
     price: "$39.99",
-    image: "https://w7.pngwing.com/pngs/18/668/png-transparent-submersible-pump-aquatech-engineers-water-well-water-industry-submersible-pump-booster-pump.png"
+    image: "https://th.bing.com/th/id/OIF.D69rspeVNX7P2RVtolRJhQ?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3"
   }  
 ];
 
