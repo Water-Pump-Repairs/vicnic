@@ -328,7 +328,16 @@ footer {
     max-height: 25vh;
   }
 }
-
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 6px;
+  }
+  nav ul li {
+    margin: 6px 0;
+    display: block;
+  }
+}
 /* ==============================
    Dark Mode Support
    ============================== */
