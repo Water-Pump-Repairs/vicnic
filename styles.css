@@ -1,9 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -16,7 +23,7 @@ header {
 
 /* Navigation */
 nav {
-  background-color: #000; /* black navbar */
+  background-color: #000;
   padding: 10px 0;
   text-align: center;
 }
@@ -25,10 +32,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;                /* Use flexbox */
-  flex-direction: row;          /* Row direction */
-  justify-content: center;      /* Center the nav items horizontally */
-  align-items: center;          /* Center vertically (optional for aesthetics) */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
@@ -38,7 +45,7 @@ nav ul li {
 }
 
 nav a {
-  color: lime; /* lime text */
+  color: lime;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
@@ -53,7 +60,6 @@ nav a:focus {
   color: #000;
 }
 
-/* Add icons for contact options using Unicode symbols or emoji */
 nav .icon {
   margin-right: 5px;
 }
@@ -61,6 +67,7 @@ nav .icon {
 /* Main Section */
 main {
   padding: 20px;
+  flex: 1; /* This pushes the footer down */
 }
 
 /* Footer */
@@ -69,7 +76,5 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: relative;
-  bottom: 0;
   width: 100%;
 }
