@@ -80,7 +80,7 @@ header {
    ============================== */
 nav {
   background-color: var(--nav-bg);
-  padding: 10px 0;
+  padding: .5rem 0;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 1rem;
   position: relative;
 }
 
