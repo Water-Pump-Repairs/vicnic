@@ -291,7 +291,6 @@ footer {
 .footer-content span {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
 }
 
 .lime {
