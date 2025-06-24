@@ -30,6 +30,7 @@
    Base Styles & Typography
    ============================== */
 html, body {
+  min-height: 100vh;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -44,12 +45,7 @@ body {
   flex-direction: column;
   line-height: 1.6;
 }
-/* Highlighted contact link style */
-.contact-highlight {
-  color: var(--accent-color);
-  font-weight: bold;
-  text-decoration: none;
-}
+
 /* Remove default outline only if not focused, otherwise custom focus styles handled below */
 :focus {
   outline: none;
@@ -72,7 +68,6 @@ body {
   display: inline-block;
 }
 
-/* Header styles */
 header {
   background: var(--header-bg);
   color: var(--primary-color);
@@ -89,7 +84,6 @@ nav {
   text-align: center;
 }
 
-/* Navigation list styles */
 nav ul {
   list-style: none;
   padding: 0;
@@ -116,7 +110,6 @@ nav a {
   transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
 }
 
-/* Navigation hover and focus styles */
 nav a:hover,
 nav a:focus {
   background: var(--primary-color);
@@ -124,7 +117,6 @@ nav a:focus {
   transform: scale(1.1);
 }
 
-/* Accessibility: Visible focus for keyboard navigation */
 nav a:focus-visible {
   outline: 3px dashed var(--primary-color);
   outline-offset: 4px;
@@ -133,34 +125,37 @@ nav a:focus-visible {
 /* ==============================
    Utility & Highlight Classes
    ============================== */
-/* Lime text utility */
 .lime {
   color: var(--primary-color) !important;
+}
+
+/* Highlighted contact link style */
+.contact-highlight {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* ==============================
    Main Content Area
    ============================== */
 main {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;      /* Horizontal center */
-  justify-content: center;  /* Vertical center */
-  padding: 40px 10vw;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  text-align: center;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: center; /* Vertically centers content */
+  min-height: 0;
   width: 100%;
+  box-sizing: border-box;
+  padding: 24px 10vw;
 }
 
 main > * {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
 }
 
-/* Main content elements */
 main ul,
 main li,
 main h2,
@@ -173,12 +168,26 @@ main button {
   color: var(--primary-color);
 }
 
-/* Center unordered lists except inside forms */
 main ul {
   display: inline-block;
   text-align: left;
   margin: 0 auto 24px;
   padding-left: 0;
+}
+
+/* ==============================
+   Hero Image (Main)
+   ============================== */
+.hero-image-main {
+  width: 100%;
+  max-width: 900px;
+  max-height: 40vh;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 0 auto 32px auto;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.23), 0 1.5px 3px rgba(0,0,0,0.12);
+  display: block;
+  animation: fadeIn 0.9s;
 }
 
 /* ==============================
@@ -200,7 +209,6 @@ main ul {
 /* ==============================
    Buttons
    ============================== */
-/* Primary button style for all main actions */
 .primary-button, 
 .button, 
 main button {
@@ -268,30 +276,6 @@ main textarea:focus {
 }
 
 /* ==============================
-   Hero Image
-   ============================== */
-/* Hero image styles */
-.hero-image {
-  width: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 10px;
-}
-
-.hero-image-main {
-  width: 100%;
-  max-width: 900px;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 18px;
-  margin: 0 auto 32px auto;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.23), 0 1.5px 3px rgba(0,0,0,0.12);
-  display: block;
-  animation: fadeIn 0.9s;
-}
-/* ==============================
    Footer
    ============================== */
 footer {
@@ -322,13 +306,16 @@ footer {
     width: 90%;
   }
   main {
-    padding: 16px 2vw;
+    padding: 12px 2vw;
   }
   .company-title {
     font-size: 1.4rem;
   }
   .contact-us-title {
     font-size: 1.5rem;
+  }
+  .hero-image-main {
+    max-height: 25vh;
   }
 }
 
