@@ -180,8 +180,7 @@ main ul {
    ============================== */
 .hero-image-main {
   width: 100%;
-  max-width: 900px;
-  max-height: 40vh;
+  max-height: 30vh;
   object-fit: cover;
   border-radius: 18px;
   margin: 0 auto 32px auto;
