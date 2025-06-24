@@ -280,9 +280,6 @@ footer {
   color: var(--primary-color);
   padding: 10px 0;
   width: 100%;
-}
-
-.footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
