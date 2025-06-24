@@ -7,11 +7,12 @@ html, body {
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #222; /* Changed to dark grey */
-  color: lime;            /* Lime text for all pages */
+  background-color: #222;
+  color: lime;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center; /* Centralize all text by default */
 }
 
 /* Header */
@@ -72,10 +73,18 @@ nav .icon {
 
 /* Main Section */
 main {
-  padding: 20px;
+  padding: 40px 10vw; /* Big horizontal padding, and more vertical */
   flex: 1;
-  background-color: #222; /* Ensure main matches body */
-  color: lime;            /* Lime text in main too */
+  background-color: #222;
+  color: lime;
+  text-align: center; /* Centralize everything in main */
+  box-sizing: border-box;
+}
+
+/* Centralize all children in main (optional for forms, lists, etc.) */
+main > * {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Services, About, Contact Specific */
@@ -89,6 +98,14 @@ main input,
 main textarea,
 main button {
   color: lime;
+  text-align: center;
+}
+
+main ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto 24px auto;
+  padding-left: 0;
 }
 
 main input,
@@ -101,6 +118,7 @@ main textarea {
   width: 100%;
   color: lime;
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 main input:focus,
@@ -171,4 +189,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
+  text-align: center;
 }
