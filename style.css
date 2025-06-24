@@ -28,14 +28,28 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block; /* Improved for more styling options */
   margin: 0 15px;
+  position: relative;
 }
 
 nav a {
   color: lime; /* lime text */
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 16px;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+  background: lime;
+  color: #000;
+}
+
+/* Add icons for contact options using Unicode symbols or emoji */
+nav .icon {
+  margin-right: 5px;
 }
 
 /* Main Section */
@@ -53,4 +67,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
