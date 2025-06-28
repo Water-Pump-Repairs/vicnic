@@ -1,22 +1,10 @@
-/* 
-  Vicnic Water Pump Repair - Stylesheet 
-  Improved for: 
-    - Semantic clarity 
-    - Accessibility 
-    - Responsiveness 
-    - Consistency 
-    - Performance 
-    - SEO 
-    - Readability 
-*/
+/* Vicnic Water Pump Repair - Stylesheet Improved for: - Semantic clarity - Accessibility - Responsiveness - Consistency - Performance - SEO - Readability */
 
-/* ==============================
-   CSS Variables for Consistency
-   ============================== */
+/* ============================== CSS Variables for Consistency ============================== */
 :root {
   --primary-color: lime;
   --secondary-color: #222;
-  --accent-color: #ff4500;    /* Orange-Red for highlights */
+  --accent-color: #ff4500; /* Orange-Red for highlights */
   --header-bg: #333;
   --nav-bg: #000;
   --footer-bg: #333;
@@ -26,9 +14,7 @@
   --transition-speed: 0.3s;
 }
 
-/* ==============================
-   Base Styles & Typography
-   ============================== */
+/* ============================== Base Styles & Typography ============================== */
 html, body {
   max-height: 100vh;
   height: 100%;
@@ -51,9 +37,7 @@ body {
   outline: none;
 }
 
-/* ==============================
-   Header & Company Title
-   ============================== */
+/* ============================== Header & Company Title ============================== */
 /* Styling for the main company title */
 .company-title {
   font-size: 3.2rem;
@@ -75,9 +59,7 @@ header {
   text-align: center;
 }
 
-/* ==============================
-   Navigation
-   ============================== */
+/* ============================== Navigation ============================== */
 nav {
   background-color: var(--nav-bg);
   padding: .5rem 0;
@@ -110,8 +92,7 @@ nav a {
   transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover, nav a:focus {
   background: var(--primary-color);
   color: var(--secondary-color);
   transform: scale(1.1);
@@ -122,9 +103,7 @@ nav a:focus-visible {
   outline-offset: 4px;
 }
 
-/* ==============================
-   Utility & Highlight Classes
-   ============================== */
+/* ============================== Utility & Highlight Classes ============================== */
 .lime {
   color: var(--primary-color) !important;
 }
@@ -136,9 +115,7 @@ nav a:focus-visible {
   text-decoration: none;
 }
 
-/* ==============================
-   Main Content Area
-   ============================== */
+/* ============================== Main Content Area ============================== */
 main {
   flex: 1 0 auto;
   display: flex;
@@ -156,15 +133,7 @@ main > * {
   width: 100%;
 }
 
-main ul,
-main li,
-main h2,
-main h3,
-main p,
-main label,
-main input,
-main textarea,
-main button {
+main ul, main li, main h2, main h3, main p, main label, main input, main textarea, main button {
   color: var(--primary-color);
 }
 
@@ -175,9 +144,7 @@ main ul {
   padding-left: 0;
 }
 
-/* ==============================
-   Hero Image (Main)
-   ============================== */
+/* ============================== Hero Image (Main) ============================== */
 .hero-image-main {
   width: 100%;
   max-height: 30vh;
@@ -186,193 +153,4 @@ main ul {
   margin: 0 auto 32px auto;
   box-shadow: 0 6px 32px rgba(0,0,0,0.23), 0 1.5px 3px rgba(0,0,0,0.12);
   display: block;
-  animation: fadeIn 0.9s;
-}
-
-/* ==============================
-   Contact Us Title
-   ============================== */
-/* Styling for tall, thin "Contact us" heading */
-.contact-us-title {
-  font-family: var(--font-family-condensed);
-  font-stretch: condensed;
-  font-weight: 500;
-  font-size: 2.5rem;
-  letter-spacing: 0.05em;
-  color: var(--accent-color);
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-/* ==============================
-   Buttons
-   ============================== */
-.primary-button, 
-.button, 
-main button {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 18px;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 12px;
-  display: inline-block;
-  transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.primary-button:hover, 
-.primary-button:focus,
-.button:hover, 
-.button:focus,
-main button:hover,
-main button:focus {
-  background: #bfff00;
-  color: #000;
-  transform: scale(1.05);
-}
-
-main button:focus-visible,
-.primary-button:focus-visible {
-  outline: 3px solid var(--accent-color);
-  outline-offset: 2px;
-}
-
-/* ==============================
-   Forms
-   ============================== */
-.contact-form {
-  max-width: 450px;
-  margin: 30px auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-main input,
-main textarea {
-  background: #444;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  padding: 8px;
-  margin-bottom: 12px;
-  width: 100%;
-  color: var(--primary-color);
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
-main input:focus,
-main textarea:focus {
-  outline: 2px solid var(--primary-color);
-}
-
-footer {
-  background-color: var(--footer-bg);
-  color: var(--primary-color);
-  padding: 10px 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem; /* space between items */
-  text-align: center; /* keeps it tidy on wrap */
-}
-
-.footer-content span {
-  display: flex;
-  align-items: center;
-}
-
-.lime {
-  color: lime;
-}
-
-/* ==============================
-   Responsive Design
-   ============================== */
-@media (max-width: 900px) {
-  main {
-    padding: 30px 3vw;
-  }
-  .company-title {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  nav ul li {
-    margin: 0 16px;
-  }
-  .contact-form {
-    width: 90%;
-  }
-  main {
-    padding: 12px 2vw;
-  }
-  .company-title {
-    font-size: 1.4rem;
-  }
-  .contact-us-title {
-    font-size: 1.5rem;
-  }
-  .hero-image-main {
-    max-height: 25vh;
-  }
-}
-@media (max-width: 480px) {
-  nav ul {
-    flex-direction: column;
-    gap: 6px;
-  }
-  nav ul li {
-    margin: 6px 0;
-    display: block;
-  }
-}
-/* ==============================
-   Dark Mode Support
-   ============================== */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111;
-    color: white;
-  }
-  main,
-  header,
-  footer {
-    background-color: #111;
-    color: white;
-  }
-  nav {
-    background-color: #181818;
-  }
-}
-
-/* ==============================
-   Animations (Optional Enhancements)
-   ============================== */
-/* Subtle fade-in animation for main content */
-main {
-  animation: fadeIn 0.7s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-.ft-footer{
-  display:flex;
-  justify-content:center;
-  flex-direction:row;
-  align-items:center;
-  height:auto;
-}
+  animation: fadeIn 0.
