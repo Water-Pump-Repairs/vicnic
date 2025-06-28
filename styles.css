@@ -1,4 +1,4 @@
-And the css
+
 
 /* 
   Vicnic Water Pump Repair - Stylesheet 
@@ -19,7 +19,7 @@ And the css
   --primary-color: lime;
   --secondary-color: #222;
   --accent-color: #ff4500;    /* Orange-Red for highlights */
-  --header-bg: #333;
+  --header-bg: grey;
   --nav-bg: #000;
   --footer-bg: #333;
   --font-family-sans: 'Arial', sans-serif;
