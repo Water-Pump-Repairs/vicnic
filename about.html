@@ -1,59 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Us - Vicnic Water Pump Repair</title>
-    <meta name="description" content="Learn more about Vicnic Water Pump Repair, specializing in water pump maintenance and repair for homes, farms, and businesses. Reliable, fast, and affordable water pump services.">
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header>
-        <h1>
-            <a href="index.html" class="lime">Vicnic</a> Water <a href="index.html" class="lime">Pump</a> Repair
-        </h1>
-        <p>Reliable · <a href="index.html" class="lime">Fast</a> · Affordable</p>
-    </header>
-    <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="mailto:info@vicnicwaterpumps.com">Email</a></li>
-            <li><a href="https:                                                     
-        </ul>
-    </nav>
-    <main>
-        <img src="5fcf451542356423894952.png" alt="Professional water pump repair service in action" class="hero-image-main" style="width:100%;">
-        <section>
-            <h2>About Us</h2>
-            <p>
-                <strong>Vicnic Water Pump Repair</strong> is a leader in <strong>water pump repair</strong> and maintenance, serving homes, farms, and businesses with reliable, fast, and affordable solutions. Our experienced team provides expert <strong>emergency water pump services</strong> to keep your water systems operational and efficient.
-            </p>
-            <p>
-                Our mission is to keep your water flowing with minimal downtime. Whether it’s emergency repairs, routine maintenance, or pump installation, we pride ourselves on skilled technicians, honest advice, and transparent pricing.
-            </p>
-        </section>
-        <section>
-            <h3>Why Choose Vicnic?</h3>
-            <ul>
-                <li>Expert diagnosis and repair of all water pump types</li>
-                <li>Preventative maintenance and servicing</li>
-                <li>Installation of new pumps and systems</li>
-                <li>Emergency water pump services available</li>
-                <li>Trusted by residential and commercial clients</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Our Commitment</h3>
-            <p>
-                We are committed to delivering quality workmanship and exceptional customer service. As the go-to <strong>water pump repair specialists</strong> in the region, we aim for 100% customer satisfaction on every job.
-            </p>
-        </section>
-    </main>
-    <footer class="ft-footer" style="background:lime;">
-        &copy; 2025 <span class="lime">Vicnic</span> Water Pump Repair. All rights reserved.<br>
-        <strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a> | <strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe
-    </footer>
-</body>
-</html>
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f7f9fa;
+    margin: 0;
+    color: #212529;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 22px 0 10px 0;
+    margin-bottom: 18px;
+}
+
+.site-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.brand-accent {
+    color: #97d700; /* Softer lime green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tagline {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+    background: #e9fcd7;
+    color: #5e7d00;
+}
+
+.hero-image-main {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.about-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px 22px 20px 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.about-section h2, .about-section h3 {
+    color: #5e7d00;
+    margin-top: 0;
+}
+
+.about-section ul {
+    padding-left: 18px;
+    margin: 14px 0 0 0;
+}
+
+.about-section li {
+    margin-bottom: 8px;
+}
+
+.site-footer {
+    background: #e9fcd7;
+    color: #343a40;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    border-top: 2px solid #c6e49d;
+}
+
+.contact-highlight {
+    color: #367c2b;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 8px;
+    }
+    .about-section {
+        padding: 14px 8px 12px 8px;
+    }
+    .site-header h1 {
+        font-size: 1.3rem;
+    }
+    .hero-image-main {
+        max-height: 180px;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
