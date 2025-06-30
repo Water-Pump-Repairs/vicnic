@@ -48,7 +48,9 @@ h1 {
   background: #ececec;
 }
 .product-image:hover {
-zoom:5;
+  zoom:5;
+  transform:translate(200px);
+  
 }
 
 .product-info {
