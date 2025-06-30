@@ -13,6 +13,7 @@ main {
   color:lime;
 }
 
+
 h1 {
   text-align: center;
   display:flex;
@@ -45,6 +46,9 @@ h1 {
   height: 180px;
   object-fit: cover;
   background: #ececec;
+}
+.product-image:hover {
+zoom:5;
 }
 
 .product-info {
