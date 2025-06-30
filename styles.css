@@ -292,6 +292,7 @@ footer {
 .footer-content span {
   display: flex;
   align-items: center;
+  color:orange;
 }
 
 .lime {
@@ -377,4 +378,5 @@ main {
   flex-direction:row;
   align-items:center;
   height:auto;
+  color:orange;
 }
