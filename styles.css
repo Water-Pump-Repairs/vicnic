@@ -384,3 +384,11 @@ main {
   height:auto;
   color:orange;
 }
+#contact-data{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background:orange;
+  
+}
