@@ -83,10 +83,11 @@ header {
    ============================== */
 nav {
   background-color: var(--nav-bg);
-  padding: .3rem 0;
+  padding: 0.6rem 0; /* Double the original .3rem */
   text-align: center;
   z-index: 2;
   position: relative;
+  min-height: 4.2em; /* Add a minimum height for double appearance */
 }
 
 nav ul {
@@ -97,14 +98,15 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 nav ul li {
   display: inline-block;
   margin: 0 1rem;
   position: relative;
+  height: 100%;
 }
-
 nav a {
   color: var(--primary-color);
   text-decoration: none;
