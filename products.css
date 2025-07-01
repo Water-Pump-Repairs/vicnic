@@ -46,15 +46,19 @@ h1 {
   transition: 
     transform 0.23s cubic-bezier(.32,1.56,.64,1), 
     box-shadow 0.23s cubic-bezier(.32,1.56,.64,1),
-    background 0.3s;
+    background 0.5s;
   border: 2px solid grey;
 }
 
 .product-card:hover {
   transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 8px 32px rgba(50,255,50,0.18), 0 2px 8px rgba(0,0,0,0.12);
-  border-color: lime;
-  background: #444;
+  /* Blue "water in a vessel" glow and background */
+  box-shadow:
+    0 12px 40px 0 rgba(30,144,255, 0.23),
+    0 0 32px 0 rgba(0,191,255, 0.22),
+    0 2px 8px rgba(0,0,0,0.10);
+  border-color: #1e90ff;
+  background: linear-gradient(135deg, #22354c 60%, #1e90ff 100%);
 }
 
 .product-image {
@@ -70,10 +74,10 @@ h1 {
 }
 
 .product-card:hover .product-image {
-  filter: brightness(1.15) saturate(1.2);
+  filter: brightness(1.12) saturate(1.25);
   transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0 2px 16px lime;
-  border-bottom: 2px solid lime;
+  box-shadow: 0 2px 24px #1e90ff;
+  border-bottom: 2px solid #1e90ff;
 }
 
 .product-info {
@@ -94,7 +98,7 @@ h1 {
 }
 
 .product-card:hover .product-name {
-  color: #ff0;
+  color: #1e90ff;
 }
 
 .product-description {
@@ -105,7 +109,7 @@ h1 {
 }
 
 .product-card:hover .product-description {
-  color: #ffe066;
+  color: #7edcff;
 }
 
 .product-price {
@@ -118,7 +122,7 @@ h1 {
 }
 
 .product-card:hover .product-price {
-  color: lime;
+  color: #1e90ff;
 }
 
 /* Utility Classes */
