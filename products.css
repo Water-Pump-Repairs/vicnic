@@ -29,6 +29,45 @@ h1 {
   transition: background 0.3s, color 0.3s;
 }
 
+/* Navigation Bar Styles */
+nav {
+  margin: 0;
+  padding: 0;
+  background: #282828;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  color: lime;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  background: #1e90ff;
+  color: #fff;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -143,6 +182,10 @@ h1 {
   .products-grid {
     gap: 16px;
   }
+  .nav-menu {
+    gap: 1rem;
+    padding: 0.5em 0.5em;
+  }
 }
 @media (max-width: 500px) {
   main {
@@ -151,5 +194,13 @@ h1 {
   h1 {
     font-size: 1.3rem;
     padding: 14px 0 8px 0;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .nav-menu a {
+    padding: 0.4em 0.6em;
+    font-size: 1rem;
   }
 }
