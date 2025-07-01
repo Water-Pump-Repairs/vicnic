@@ -42,7 +42,7 @@ body {
   font-family: var(--font-family-sans);
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  max-height: 95vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
@@ -391,7 +391,4 @@ main {
   flex-direction:column;
   background:orange;
 }
-#contact-data{
-text-align:center;
-  
-}
+
