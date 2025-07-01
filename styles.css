@@ -315,55 +315,48 @@ footer {
 /* ==============================
    Responsive Design
    ============================== */
-@media (max-width: 900px) {
-  main {
-    padding-left: 3vw;
-    padding-right: 3vw;
-    margin-top: 18px;
+@media (max-width: 600px) {
+  html {
+    font-size: 18px; /* Increase base font size for better readability */
+  }
+  body, main, nav, header, footer {
+    font-size: 1rem; /* Ensure all body text is at least 1rem */
   }
   .company-title {
-    font-size: 2.2rem;
+    font-size: 2rem; /* Larger for mobile */
   }
-  .hero-image-main {
-    max-width: 98vw;
-    max-height: 28vh;
-    margin: 24px auto 24px auto;
+  .contact-us-title {
+    font-size: 1.25rem;
+  }
+  nav a {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+  main h2 {
+    font-size: 1.4rem;
+  }
+  main h3 {
+    font-size: 1.15rem;
+  }
+  main, .contact-form {
+    font-size: 1rem;
+  }
+  main p, main li, main label, main input, main textarea, main button {
+    font-size: 1rem;
+  }
+  .primary-button, .button, main button {
+    font-size: 1.1rem;
+    padding: 12px 20px;
   }
 }
-@media (max-width: 600px) {
-  nav ul li {
-    margin: 0 16px;
-  }
-  .contact-form {
-    width: 90%;
-  }
-  main {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-top: 8px;
+@media (max-width: 400px) {
+  html {
+    font-size: 19px; /* Even larger for very small screens */
   }
   .company-title {
     font-size: 1.4rem;
   }
-  .contact-us-title {
-    font-size: 1.5rem;
-  }
-  .hero-image-main {
-    max-height: 20vh;
-    margin: 14px auto 16px auto;
-  }
 }
-@media (max-width: 480px) {
-  nav ul {
-    flex-direction: column;
-    gap: 6px;
-  }
-  nav ul li {
-    margin: 6px 0;
-    display: block;
-  }
-}
-
 /* ==============================
    Dark Mode Support
    ============================== */
