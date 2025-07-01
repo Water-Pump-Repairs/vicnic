@@ -186,6 +186,9 @@ nav {
     gap: 1rem;
     padding: 0.5em 0.5em;
   }
+   footer .contact-highlight {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 500px) {
   main {
@@ -202,5 +205,8 @@ nav {
   .nav-menu a {
     padding: 0.4em 0.6em;
     font-size: 1rem;
+  }
+  footer .contact-highlight {
+    font-size: 1.8em;
   }
 }
