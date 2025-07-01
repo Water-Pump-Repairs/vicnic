@@ -1,404 +1,59 @@
-/* 
-  Vicnic Water Pump Repair - Stylesheet 
-  Improved for: 
-    - Semantic clarity 
-    - Accessibility 
-    - Responsiveness 
-    - Consistency 
-    - Performance 
-    - SEO 
-    - Readability 
-*/
-
-/* ==============================
-   CSS Variables for Consistency
-   ============================== */
-:root {
-  --primary-color: lime;
-  --secondary-color: #222;
-  --accent-color: #ff4500;    /* Orange-Red for highlights */
-  --header-bg: grey;
-  --nav-bg: grey;
-  --footer-bg: #333;
-  --font-family-sans: 'Arial', sans-serif;
-  --font-family-condensed: 'Oswald', 'Arial Narrow', Arial, sans-serif;
-  --company-title-shadow: 2px 2px 12px #111, 0 0 2px lime;
-  --transition-speed: 0.3s;
-}
-
-/* ==============================
-   Base Styles & Typography
-   ============================== */
-html, body {
-  max-height: 100vh;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-family-sans);
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Remove default outline only if not focused, otherwise custom focus styles handled below */
-:focus {
-  outline: none;
-}
-
-/* ==============================
-   Header & Company Title
-   ============================== */
-.company-title {
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: var(--primary-color);
-  letter-spacing: 0.04em;
-  text-shadow: var(--company-title-shadow);
-  text-transform: uppercase;
-  margin-bottom: 0.1em;
-  margin-top: 0.3em;
-  line-height: 1.1;
-  display: inline-block;
-}
-.company-title :hover {
-  color:orange;
-}
-
-header {
-  background: var(--header-bg);
-  color: var(--primary-color);
-  padding: 10px 0 0 0;
-  text-align: center;
-  z-index: 2;
-  position: relative;
-}
-
-/* ==============================
-   Navigation
-   ============================== */
-nav {
-  background-color: var(--nav-bg);
-  padding: 0.6rem 0; /* Double the original .3rem */
-  text-align: center;
-  z-index: 2;
-  position: relative;
-  min-height: 4.2em; /* Add a minimum height for double appearance */
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 1rem;
-  position: relative;
-  height: 100%;
-}
-nav a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 6px 10px;
-  border-radius: 4px;
-  background: transparent;
-  transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
-}
-
-nav a:hover,
-nav a:focus {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  transform: scale(1.1);
-}
-
-nav a:focus-visible {
-  outline: 3px dashed var(--primary-color);
-  outline-offset: 4px;
-}
-
-/* ==============================
-   Utility & Highlight Classes
-   ============================== */
-.lime {
-  color: var(--primary-color) !important;
-}
-
-/* Highlighted contact link style */
-.contact-highlight {
-  color: var(--accent-color);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* ==============================
-   Main Content Area
-   ============================== */
-main {
-  flex: 1 0 auto;
-  margin-top: 32px; /* Ensures spacing from nav/header */
-  padding-top: 10px;
-  display: flex;
-  margin-bottom: 0;
-  max-height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Vertically centers content */
-  min-height: 0;
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
-
-main > * {
-  max-width: 900px;
-  width: 100%;
-}
-
-main ul,
-main li,
-main h2,
-main h3,
-main p,
-main label,
-main input,
-main textarea,
-main button {
-  color: var(--primary-color);
-}
-
-main ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0 auto 24px;
-  padding-left: 0;
-}
-
-/* ==============================
-   Hero Image (Main) - Improved
-   ============================== */
-.hero-image-main {
-  width: 100%;
-  max-width: 900px;
-  max-height: 40vh;
-  object-fit: cover;
-  border-radius: 18px;
-  display: block;
-  margin: 32px auto 32px auto;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.23), 0 1.5px 3px rgba(0,0,0,0.12);
-  animation: fadeIn 0.9s;
-  z-index: 0;
-  clear: both;
-  background: #222; /* fallback background for transparent images */
-}
-
-/* ==============================
-   Contact Us Title
-   ============================== */
-.contact-us-title {
-  font-family: var(--font-family-condensed);
-  font-stretch: condensed;
-  font-weight: 500;
-  font-size: 2.5rem;
-  letter-spacing: 0.05em;
-  color: var(--accent-color);
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  text-transform: uppercase;
-}
-
-/* ==============================
-   Buttons
-   ============================== */
-.primary-button, 
-.button, 
-main button {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 18px;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 12px;
-  display: inline-block;
-  transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.primary-button:hover, 
-.primary-button:focus,
-.button:hover, 
-.button:focus,
-main button:hover,
-main button:focus {
-  background: #bfff00;
-  color: #000;
-  transform: scale(1.05);
-}
-
-main button:focus-visible,
-.primary-button:focus-visible {
-  outline: 3px solid var(--accent-color);
-  outline-offset: 2px;
-}
-
-/* ==============================
-   Forms
-   ============================== */
-.contact-form {
-  max-width: 450px;
-  margin: 30px auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-main input,
-main textarea {
-  background: #444;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  padding: 8px;
-  margin-bottom: 12px;
-  width: 100%;
-  color: var(--primary-color);
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
-main input:focus,
-main textarea:focus {
-  outline: 2px solid var(--primary-color);
-}
-
-footer {
-  background-color: grey;
-  color: var(--primary-color);
-  padding: 10px 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem; /* space between items */
-  text-align: center; /* keeps it tidy on wrap */
-}
-
-.footer-content span {
-  display: flex;
-  align-items: center;
-  color:orange;
-}
-
-.lime {
-  color: orange;
-}
-
-/* ==============================
-   Responsive Design
-   ============================== */
-@media (max-width: 600px) {
-  html {
-    font-size: 18px; /* Increase base font size for better readability */
-  }
-  body, main, nav, header, footer {
-    font-size: 1rem; /* Ensure all body text is at least 1rem */
-  }
-  .company-title {
-    font-size: 2rem; /* Larger for mobile */
-  }
-  .contact-us-title {
-    font-size: 1.25rem;
-  }
-  nav a {
-    font-size: 1rem;
-    padding: 10px 12px;
-  }
-  main h2 {
-    font-size: 1.4rem;
-  }
-  main h3 {
-    font-size: 1.15rem;
-  }
-  main, .contact-form {
-    font-size: 1rem;
-  }
-  main p, main li, main label, main input, main textarea, main button {
-    font-size: 1rem;
-  }
-  .primary-button, .button, main button {
-    font-size: 1.1rem;
-    padding: 12px 20px;
-  }
-}
-@media (max-width: 400px) {
-  html {
-    font-size: 19px; /* Even larger for very small screens */
-  }
-  .company-title {
-    font-size: 1.4rem;
-  }
-}
-/* ==============================
-   Dark Mode Support
-   ============================== */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111;
-    color: white;
-  }
-  main,
-  header,
-  footer {
-    background-color: #111;
-    color: white;
-  }
-  nav {
-    background-color: grey;
-  }
-}
-
-/* ==============================
-   Animations (Optional Enhancements)
-   ============================== */
-main {
-  animation: fadeIn 0.7s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-.ft-footer{
-  display:flex;
-  justify-content:center;
-  flex-direction:row;
-  align-items:center;
-  height:auto;
-  color:orange;
-}
-#contact-data:hover{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  background:grey;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vicnic Water Pump Repair</title>
+  <meta name="description" content="Vicnic Water Pump Repair offers fast, reliable, and affordable water pump repair and maintenance for homes, farms, and businesses in Zimbabwe.">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts Oswald for tall, thin font (if not already included) -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8126314519386612"
+     crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-8126314519386612">
+</head>
+<body>
+  <header>
+    <h1 class="company-title">
+      <a href="index.html" class="lime" style="text-decoration:none;">Vicnic Water Pump Repair</a>
+    </h1>
+    <p>Reliable · <span class="lime">Fast</span> · Affordable</p>
+  </header>
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="mailto:vicnic75@gmail.com" class="contact-highlight">Email</a></li>
+      <li><a href="https://wa.me/263774816199" class="contact-highlight" target="_blank">WhatsApp</a></li>
+    </ul>
+  </nav>
+  <main>
+    <img src="5fcf451542356423894952.png" alt="Vicnic Water Pump Repair in action" class="hero-image-main">
+    <section>
+      <h2>Welcome to Vicnic Water Pump Repair</h2>
+      <p>
+        We specialize in the maintenance and repair of water pumps for homes, farms, and businesses. Our experienced team is dedicated to providing <span class="lime">fast</span>, reliable, and affordable solutions to keep your water flowing smoothly.
+      </p>
+      <p>
+        <a href="services.html" class="primary-button">See Our Services</a>
+      </p>
+    </section>
+    <section style="margin-top:2.5em;">
+      <h3>Contact Information</h3>
+      <ul style="list-style:none;padding:0;">
+        <li><strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a></li>
+        <li><strong>Email:</strong> <a href="mailto:vicnic75@gmail.com" class="contact-highlight">vicnic75@gmail.com</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/263774816199" class="contact-highlight" target="_blank">Chat with us</a></li>
+        <li><strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe</li>
+      </ul>
+    </section>
+  </main>
+  <footer style="text-align:center;">
+    &copy; 2025 <span class="lime">Vicnic</span> Water Pump Repair. All rights reserved.<br>
+    <strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a> |
+    <strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe
+  </footer>
+</body>
+</html>
