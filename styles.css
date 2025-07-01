@@ -384,7 +384,7 @@ main {
   height:auto;
   color:orange;
 }
-#contact-data{
+#contact-data:hover{
   display:flex;
   justify-content:center;
   align-items:center;
