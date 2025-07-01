@@ -48,8 +48,8 @@ h1 {
   background: #ececec;
 }
 .product-image:hover {
-  zoom:5;
-  transform:translate(200px);
+  
+  transform:translateX(200px) 1s ease out;
   
 }
 
