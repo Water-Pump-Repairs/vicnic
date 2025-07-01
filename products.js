@@ -48,22 +48,19 @@ const products = [
     image: "https://e7.pngegg.com/pngimages/343/164/png-clipart-submersible-pump-solar-powered-pump-water-pumping-irrigation-water-submersible-pump-borstelloze-elektromotor.png"
   }
 ];
-// Render the products
-const container = document.getElementById("products-container");
 
-function renderProducts(products) {
-  container.innerHTML = products.map(product => `
-    <div class="product-card">
-      <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <div class="product-info">
-        <div>
-          <div class="product-name">${product.name}</div>
-          <div class="product-description">${product.description}</div>
-        </div>
-        <div class="product-price">${product.price}</div>
-      </div>
+const container = document.getElementById('products-container');
+
+products.forEach(product => {
+  const card = document.createElement('div');
+  card.className = 'product-card';
+  card.innerHTML = `
+    <img class="product-image" src="${product.image}" alt="${product.name}">
+    <div class="product-info">
+      <h2 class="product-name">${product.name}</h2>
+      <p class="product-description">${product.description}</p>
+      <span class="product-price">${product.price}</span>
     </div>
-  `).join('');
-}
-
-renderProducts(products);
+  `;
+  container.appendChild(card);
+});
