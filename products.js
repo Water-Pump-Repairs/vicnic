@@ -64,3 +64,27 @@ products.forEach(product => {
   `;
   container.appendChild(card);
 });
+// send-to-whatsapp.js
+// Call this script from your contact form page (e.g. <script src="send-to-whatsapp.js"></script>)
+// Make sure your form has id="contactForm" and fields with ids: name, email, message
+
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    var whatsappNumber = '263774816199'; // Replace with your WhatsApp number (no + or spaces)
+    var text =
+      'Name: ' + encodeURIComponent(name) +
+      '%0AEmail: ' + encodeURIComponent(email) +
+      '%0AMessage: ' + encodeURIComponent(message);
+
+    var url = 'https://wa.me/' + whatsappNumber + '?text=' + text;
+    window.open(url, '_blank');
+  });
+});
