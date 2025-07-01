@@ -71,7 +71,7 @@ body {
 }
 .company-title :hover {
   color:orange;
-  transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
+
 }
 
 header {
