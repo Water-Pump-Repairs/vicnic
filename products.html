@@ -3,44 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Vicnic Water Solutions - Products</title>
-    <meta name="description" content="Vicnic Water Solutions products: water pumps, accessories, and more for homes, farms, and businesses in Zimbabwe.">
-    <meta name="keywords" content="water pump, products, Vicnic, accessories, Zimbabwe, borehole, farm, home, business">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-
-    <!-- Google Fonts: Oswald for tall, thin font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
-
-    <!-- Use your products.css file for styling -->
     <link rel="stylesheet" href="products.css" />
-
-    <!-- Schema.org structured data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "Vicnic Water Solutions",
-      "image": [
-        "images/water-drop.jpg",
-        "images/water-hands.jpg"
-      ],
-      "telephone": "+263774816199",
-      "email": "vicnic75@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "9017 Victory Park Windsor",
-        "addressLocality": "Ruwa",
-        "addressCountry": "Zimbabwe"
-      },
-      "description": "Products for water pump repair, installation, and maintenance for homes, farms, and businesses in Zimbabwe.",
-      "url": "https://your-domain.com/products.html"
-    }
-    </script>
 </head>
 <body>
     <main>
         <h1>Our Products</h1>
-        <!-- Modern Navigation Bar -->
         <nav>
           <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
@@ -48,31 +17,15 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <!-- Products Grid -->
-        <section class="products-grid" aria-label="Product list">
-          <div class="product-card">
-            <img class="product-image" src="images/water-drop.jpg" alt="Water Drop Pump">
-            <div class="product-info">
-              <h2 class="product-name">Water Drop Pump</h2>
-              <p class="product-description">Efficient pump ideal for homes and small farms.</p>
-              <span class="product-price">$250</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <img class="product-image" src="images/water-hands.jpg" alt="Hand Pump">
-            <div class="product-info">
-              <h2 class="product-name">Hand Pump</h2>
-              <p class="product-description">Sturdy manual pump for rural areas and backup use.</p>
-              <span class="product-price">$180</span>
-            </div>
-          </div>
-          <!-- Add more product-card blocks as needed -->
+        <section class="products-grid" id="products-container" aria-label="Product list">
+          <!-- Products will be injected here by JS -->
         </section>
     </main>
     <footer style="text-align:center;">
-        &copy; 2025 <span class="lime">Vicnic</span> Water Solutions. All rights reserved.<br>
+        &copy; 2025 <span class="lime-text">Vicnic</span> Water Solutions. All rights reserved.<br>
         <strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a> |
         <strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe
     </footer>
+    <script src="products.js"></script>
 </body>
 </html>
