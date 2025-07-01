@@ -76,7 +76,7 @@ nav {
 }
 
 .product-card {
-  background: #333;
+  background: #1976d2; /* Change this to your desired color */
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   overflow: hidden;
