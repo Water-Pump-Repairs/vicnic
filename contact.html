@@ -2,49 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Vicnic Water Pump Repair</title>
+  <title>Contact Us | Vicnic Water Pump Repair</title>
+  <meta name="description" content="Contact Vicnic Water Pump Repair for service requests, quotes, or inquiries. Phone, email, WhatsApp, and contact form available.">
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>
-      <span class="lime">Vicnic</span> Water <span class="lime">Pump</span> Repair
+    <h1 class="company-title">
+      <a href="index.html" class="lime" style="text-decoration:none;">Vicnic Water Pump Repair</a>
     </h1>
     <p>Reliable · <span class="lime">Fast</span> · Affordable</p>
   </header>
-  <nav>
+  <nav aria-label="Main Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="mailto:vicnic75@gmail.com.com">Email</a></li>
-      <li><a href="https://wa.me/263774816199" target="_blank">WhatsApp</a></li>
+      <li><a href="mailto:vicnic75@gmail.com" class="contact-highlight">Email</a></li>
+      <li><a href="https://wa.me/263774816199" class="contact-highlight" target="_blank">WhatsApp</a></li>
     </ul>
   </nav>
-  <main id='contact-data'>
-     <h2>Contact Us</h2>
-     <p>For service requests, quotes, or inquiries, please use any of the methods below:</p>
-    <ul>
-      <li><strong>Phone:</strong> <a href="tel:+263774816199">+263774816199</a></li>
-      <li><strong>Email:</strong> <a href="mailto:vicnic75@gmail.com">vicnic75@gmail.com</a></li>
-      <li><strong>WhatsApp:</strong> <a href="https://wa.me/263774816199" target="_blank">Chat with us</a></li>
-      <li><strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe</li>
-    </ul>
-    <form class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
-      
-    </form>
-   
+  <main>
+    <section class="contact-flex">
+      <div class="contact-details">
+        <h2>Contact Us</h2>
+        <p>For service requests, quotes, or inquiries, please use any of the methods below:</p>
+        <ul style="list-style:none;padding:0;">
+          <li><strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a></li>
+          <li><strong>Email:</strong> <a href="mailto:vicnic75@gmail.com" class="contact-highlight">vicnic75@gmail.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/263774816199" class="contact-highlight" target="_blank">Chat with us</a></li>
+          <li><strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe</li>
+        </ul>
+      </div>
+      <form class="contact-form" autocomplete="off">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="primary-button">Send Message</button>
+      </form>
+    </section>
   </main>
-  <footer>
-    &copy; 2025 <span class="lime">Vicnic</span> Water Pump Repair. All rights reserved.
+  <footer style="text-align:center;">
+    &copy; 2025 <span class="lime">Vicnic</span> Water Pump Repair. All rights reserved.<br>
+    <strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a> |
+    <strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe
   </footer>
 </body>
 </html>
