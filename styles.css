@@ -390,5 +390,8 @@ main {
   align-items:center;
   flex-direction:column;
   background:orange;
+}
+#contact-data{
+text-align:center;
   
 }
