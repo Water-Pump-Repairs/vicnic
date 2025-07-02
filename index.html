@@ -8,16 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="aDjhRt0mMNFXKEY25VLQNpYxDMP0CPO-nWD-HuKKee8" />
+
+    <!-- Preload LCP image in WebP format -->
+    <link rel="preload" as="image" href="5fcf451542356423894952.webp" type="image/webp">
+
     <!-- Google Fonts: Oswald for tall, thin font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
 
+    <!-- Critical CSS inline or minimal blocking -->
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Google AdSense (Note: Not allowed on GitHub Pages) -->
-    <!--
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8126314519386612" crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-8126314519386612">
-    -->
 
     <!-- Schema.org structured data for SEO -->
     <script type="application/ld+json">
@@ -64,8 +63,14 @@
     <main>
         <!-- Hero Section with Images -->
         <section class="hero-section" style="text-align:center; margin-bottom:2rem;">
-            <!-- Image 1: Water Drop -->
-            <img src="5fcf451542356423894952.png" alt="A drop of water creating ripples in clear blue water" style="width:100%; max-width:900px; border-radius:12px; margin-bottom:1rem;">
+            <picture>
+                <source srcset="5fcf451542356423894952.webp" type="image/webp">
+                <img 
+                  src="5fcf451542356423894952.png" 
+                  alt="A drop of water creating ripples in clear blue water"
+                  width="900" height="400"
+                  style="width:100%; max-width:900px; border-radius:12px; margin-bottom:1rem;">
+            </picture>
         </section>
         <section>
             <h2>Welcome to Vicnic Water Solutions</h2>
@@ -90,5 +95,7 @@
         <strong>Phone:</strong> <a href="tel:+263774816199" class="contact-highlight">+263774816199</a> |
         <strong>Address:</strong> 9017 Victory Park Windsor, Ruwa, Zimbabwe
     </footer>
+    <!-- Defer any non-critical JS -->
+    <!-- <script src="emailjs-contact.js" defer></script> -->
 </body>
 </html>
