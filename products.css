@@ -210,3 +210,90 @@ nav {
     font-size: 1.8em;
   }
 }
+/* Header Styles */
+header {
+  background: #222;
+  color: lime;
+  padding: 24px 0 0 0;
+  border-radius: 0 0 12px 12px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.11);
+  margin-bottom: 18px;
+}
+
+.company-title {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+}
+
+header p {
+  margin: 0 0 14px 0;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+}
+
+header .lime {
+  color: lime !important;
+}
+
+header nav[aria-label="Main Navigation"] ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8em 0 0.8em 0;
+  margin: 0;
+  background: #282828;
+  border-radius: 0 0 8px 8px;
+}
+
+header nav[aria-label="Main Navigation"] li {
+  display: inline;
+}
+
+header nav[aria-label="Main Navigation"] a {
+  color: lime;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.03em;
+  font-size: 1.01em;
+}
+
+header nav[aria-label="Main Navigation"] a:hover,
+header nav[aria-label="Main Navigation"] a:focus {
+  background: #1e90ff;
+  color: #fff;
+}
+
+/* Responsive Header */
+@media (max-width: 700px) {
+  .company-title {
+    font-size: 1.2rem;
+  }
+  header nav[aria-label="Main Navigation"] ul {
+    gap: 0.6rem;
+    padding: 0.5em 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 13px 0 0 0;
+  }
+  .company-title {
+    font-size: 1rem;
+  }
+  header nav[aria-label="Main Navigation"] ul {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  header nav[aria-label="Main Navigation"] a {
+    padding: 0.32em 0.45em;
+    font-size: 1em;
+  }
+}
