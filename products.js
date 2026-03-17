@@ -14,7 +14,7 @@ const products = [
   {
     name: "Water Pump Repairs",
     description: "Water Pump Repairs.",
-    price: "$59.99",
+    price: "$150.99",
     image: "https://w7.pngwing.com/pngs/436/527/png-transparent-submersible-pump-wellers-hire-wastewater-water-submersible-drinking-water-submersible-pump.png"
   },
   {
@@ -32,19 +32,19 @@ const products = [
   {
     name: "Water Pump Repairs",
     description: "Water Pump Repairs.",
-    price: "$39.99",
+    price: "$140.99",
     image: "https://e7.pngegg.com/pngimages/137/277/png-clipart-submersible-pump-product-water-solar-powered-pump-water-compressor-hydraulic-pump.png"
   },
   {
     name: "Water Pump Repairs",
     description: "Water Pump Repairs.",
-    price: "$39.99",
+    price: "$170.99",
     image: "https://thumbs.dreamstime.com/z/water-pump-submersible-pump-set-submersible-borehole-supplying-clean-water-great-depth-house-motor-water-pump-submersible-pump-set-242661550.jpg"
   },
   {
     name: "Water Pump Repairs",
     description: "Water Pump Repairs.",
-    price: "$39.99",
+    price: "$185.99",
     image: "https://e7.pngegg.com/pngimages/343/164/png-clipart-submersible-pump-solar-powered-pump-water-pumping-irrigation-water-submersible-pump-borstelloze-elektromotor.png"
   }
 ];
