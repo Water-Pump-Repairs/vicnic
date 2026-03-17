@@ -49,7 +49,7 @@ const products = [
   }
 ];
 
-const container = document.getElementById('products-container');
+const container = document.querySelector('.products-grid');
 
 products.forEach(product => {
   const card = document.createElement('div');
